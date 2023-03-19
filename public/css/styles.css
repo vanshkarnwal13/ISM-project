@@ -1,0 +1,303 @@
+@font-face {
+  font-family: GilroyBold;
+  src: url("../font/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: GilroySemiBold;
+  src: url("../font/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: GilroyMedium;
+  src: url("../font/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../font/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url("../font/Gilroy-ExtraBold.ttf");
+}
+
+
+/* Variables to be used Colors */
+:root {
+  --primary-blue: #0f1320;
+  --dark-blue: #4f546c;
+  --light-blue: #bbdefb;
+  --white: #ffffff;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --light-gray: #bdbdbd;
+}
+
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Helper Functions */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.mb2 {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  height: 150px;
+  background-color: #1f1f1f;
+  width: 100%;
+}
+
+header .container {
+  height: 100%;
+  align-items: flex-start;
+}
+
+/* Login Form */
+
+.login {
+  background-color: #1f1f1f;
+  border-radius:25px ;
+  padding: 40px 100px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -100px;
+}
+
+.appcontainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #131313;
+}
+
+.login-form {
+  margin-top: 20px;
+}
+
+/* Form elements */
+.messageInput,.userNameInput {
+  height: 52px;
+  padding-left: 16px;
+  background: #2b2b2b;
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.95);
+  border: none !important;
+  border-radius: 16px;
+}
+
+.messageInput:focus,.userNameInput:focus{
+  background: #383838;
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+button {
+  height: 50px;
+  margin-left: 20px;
+  -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: GilroySemiBold;
+    color: #ffffff;
+    font-size: 20px;
+    background: #6b27f8;
+    padding: 3%;
+    text-decoration: none;
+    border: none;
+    width: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+  background: #4506c8;
+  text-decoration: none;
+}
+
+.main-content {
+  width: 100%;
+  justify-content: center;
+}
+
+/* Chat Section */
+.chat {
+  background: #1f1f1f;
+  margin: 25px 0;
+  padding: 25px;
+  color: white;
+  height: 100px;
+  overflow-y: scroll;
+  border-radius:25px;
+}
+
+.message {
+  background-color: #2B2B2B;
+  padding: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius:25px;
+}
+
+.message-right {
+  background-color: #131313;
+  margin-left: 20%;
+}
+
+.message-details {
+  margin-bottom: 5px;
+  justify-content: space-between;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container h1{
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 29px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.container p{
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+h2{
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 29px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.imageForm{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.imageInput{
+  margin-left: 0 !important;
+}
+
+.clickable{
+  border-radius:25px;
+  height : 80%;
+  width : 80%;
+  cursor: pointer;
+}
+
+#snackbar {
+  background: #6b27f8;
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  top: 50%; /* Center the snackbar */
+  right: 30px; /* 30px from the bottom */
+  border-radius: 12px;
+}
+
+#snackbar:hover{
+  background: #4506c8;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {right: 0; opacity: 0;}
+  to {right: 30px; opacity: 1;}
+}
+
+
+@keyframes fadeout {
+  from {right: 30px; opacity: 1;}
+  to {right: 0; opacity: 0;}
+}
